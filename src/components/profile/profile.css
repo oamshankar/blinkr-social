@@ -1,0 +1,145 @@
+ .profile{
+    position: sticky;
+        top: 5rem;
+        overflow: scroll;
+        height: calc(100vh - 5rem);
+        &::-webkit-scrollbar {
+            display: none;
+        }
+ }
+
+ .dark {
+    background-color: #222 !important;
+    color: white !important;
+ }
+
+ .profile .images{
+    width: 100%;
+    height: 24rem;
+    position: relative;
+ }
+
+ .profile .images .cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+ .profile .images .profilePic{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 18rem ;
+      
+ }
+
+ .profile .profileContainer{
+    padding: 1.2rem 5.5rem;
+ }
+
+ .profile .profileContainer .uInfo{
+    height: 11rem;
+    -webkit-box-shadow: 0 0 25px -10px rgba(0,0,0,0.38);
+    -moz-box-shadow: 0 0 25px -10px rgba(0, 0, 0, 0.38);
+    box-shadow: 0 0 25px -10px rgba(0,0,0,0.38);
+    border-radius: 0.5rem;
+    background-color: white;
+    color: black;
+    padding: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+ }
+
+ .profile .profileContainer .left{
+    flex: 1;
+    display: flex;
+    gap: 0.6rem;
+ }
+
+ .profile .profileContainer .left a{
+    color: darkgray;
+    font-size: 1.5rem;
+ }
+
+ .profile .profileContainer .center{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+ }
+
+ .profile .profileContainer .center span{
+    font-size: 1.8rem;
+    font-weight: 500;
+ }
+
+ .profile .profileContainer .center .info{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+ .profile .profileContainer .center button{
+    border: none;
+    background-color: #93A6E5;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+ }
+
+ .profile .profileContainer .center .info .item{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+ }
+
+ .profile .profileContainer .center .info .item span{
+    font-size: 0.8rem;
+ }
+
+ .profile .profileContainer .right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.6rem;
+ }
+
+ @media (max-width:480px){
+   .profile .profileContainer .uInfo{
+      flex-direction: column;
+      height: 30vh;
+      padding: 2.5rem;
+      margin-top: 6rem;
+   }
+
+   .profile .profileContainer{
+      padding: 0.6rem;
+   }
+ }
+
+ @media (max-width:960px) {
+
+    .profile .profileContainer {
+       padding: 1.2rem;
+    }
+
+   .profile .profileContainer .left{
+      flex-wrap: wrap;
+   }
+
+   .profile .profileContainer .uInfo{
+      padding: 2rem;
+      margin-top: 6rem;
+   }
+ }

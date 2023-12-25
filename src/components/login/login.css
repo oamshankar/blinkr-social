@@ -1,0 +1,146 @@
+body{
+    box-sizing: border-box;
+    font-family: Poppins,"sans-serif";
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #93A6E5;
+}
+
+.card{
+    display: flex;
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 500px;
+    overflow: hidden;
+}
+
+.card .left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background:linear-gradient(rgba(147,166,229,0.5),rgba(147, 166, 229, 0.5)) ,url("https://images.pexels.com/photos/18854872/pexels-photo-18854872/free-photo-of-dacher-von-verona.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load") 
+    center;
+    background-size: cover;
+    padding:3rem;
+    gap: 1rem;
+    color: white;
+}
+
+.left h1{
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.left p {
+    text-align: justify;
+    font-size: 0.9rem;
+    
+}
+
+.left span {
+    text-align: start;
+    font-size: 0.7rem;
+}
+
+.left button{
+    width: 50%;
+    padding: 0.5rem;
+    border: none;
+    background-color: white;
+    color: #93A6E5;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Poppins,"sans-serif";
+}
+
+.card .right{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    flex:1;
+    padding: 3rem;
+    justify-content: center;
+}
+
+.right h1{
+    color: #555;
+}
+
+.right form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.right form input{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 0.5rem 0.25rem;
+    font-family: Poppins;
+}
+.right form input:focus {
+    outline: none;
+}
+
+.right form button{
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color:#94a7e6 ;
+    color: white;
+    font-weight: bold;
+    font-family: Poppins;
+    cursor: pointer;
+}
+.right form button:disabled {
+    background-color: #adbae4f1;
+    color: white;
+    cursor: not-allowed;
+}
+
+.right form p{
+    color: red;
+    font-size: 0.7rem;
+}
+
+.right .media{
+    display: none;
+}
+
+.right .media span {
+    text-align: start;
+    font-size: 0.7rem;
+}
+
+@media (max-width:480px){
+    .card .left{
+        display: none;
+    }
+    .card .right{
+        display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 1rem;
+            justify-content: center;
+    }
+
+        .right .media {
+            display: block;
+    }
+}
+
+@media (max-width:960px){
+    .card {
+            display: flex;
+            width: 80%;
+            background-color: white;
+            border-radius: 10px;
+            min-height: 500px;
+            overflow: hidden;
+        }
+}

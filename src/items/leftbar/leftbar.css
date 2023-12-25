@@ -1,0 +1,74 @@
+.leftBar{
+    flex: 2;
+    position:sticky;
+    top: 5rem;
+    overflow: scroll;
+    height: calc(100vh - 5rem);
+    &::-webkit-scrollbar{
+        display: none;
+    }
+   
+}
+
+.dark {
+    background-color: #222 !important;
+    color: white !important;
+}
+
+.leftBar .container{
+    padding: 1.2rem;
+}
+.leftBar hr{
+    margin: 0.8rem 0;
+    border: none;
+    height:0.06rem;
+    background-color: lightgray;
+}
+.container .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.menu .user {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.menu .user img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.menu .leftb-items{
+    display: flex;
+    align-items: center;
+    gap:0.6rem;
+    cursor: pointer;
+}
+
+.menu span{
+    font-family: Poppins;
+    font-size: 0.6rem;
+}
+
+.menu .leftb-items span{
+    font-family: Poppins;
+    font-size: 0.8rem;
+}
+
+@media (max-width:480px){
+    .leftBar{
+        display: none;
+    }
+}
+
+@media (max-width:960px) {
+    .leftBar {
+        display: none;
+    }
+}
+

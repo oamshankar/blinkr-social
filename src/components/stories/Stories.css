@@ -1,0 +1,72 @@
+.stories{
+    display: flex;
+    gap: 0.6rem;
+    height: 20rem;
+    margin: 1.8rem 0 1.8rem 0;
+}
+
+.stories .story{
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 0.5rem;
+}
+.story img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.story span{
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+.story button {
+    position: absolute;
+    bottom: 2.2rem;
+    left: 0.5rem;
+    background-color: #93A6E5;
+    border: none;
+    border-radius: 50%;
+    font-family: Poppins;
+    font-size: 1.1rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    cursor:pointer;
+    color: white;
+    font-weight: 500;
+}
+
+@media (max-width:480px) {
+    .stories {
+        height: 4rem;
+        justify-content: space-between;
+    }
+    .stories .story{
+        flex: none;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+    }
+    .story span{
+        display: none;
+    }
+    .story button{
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+@media (max-width:960px) {
+    .stories {
+        height: 12.5rem;
+        gap: 1.2rem;
+    }
+}

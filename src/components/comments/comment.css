@@ -1,0 +1,65 @@
+.comments img{
+    width: 2.5rem;
+    height:2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comments .comment{
+    margin: 1.8rem 0;
+    display: flex;
+    justify-content: center;
+    gap:1.2rem;
+}
+
+.comments .write{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.2rem;
+    margin: 1.2rem 0;
+}
+
+.comments .write input{
+    flex: 5;
+    padding: 0.6rem;
+    border: 1px solid gray;
+    background-color: transparent;
+    color: gray;
+    border-radius: 0.5rem;
+}
+.comments .write input::placeholder{
+    font-family: Poppins;
+}
+.comments .write input:focus{
+    outline: none;
+}
+
+.comments .write button{
+    border: none;
+    background-color: #93A6E5;
+    color: white;
+    padding: 0.6rem;
+    cursor:pointer;
+    border-radius: 0.5rem;
+    font-family: Poppins;
+}
+
+.comments .comment .info{
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: flex-start;
+}
+
+.comments .comment .info span{
+    font-weight: 500;
+}
+
+.comments .comment .date{
+    flex: 1;
+    align-self:center ;
+    color:gray;
+    font-size: 0.8rem;
+}

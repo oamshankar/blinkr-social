@@ -1,0 +1,113 @@
+.rightBar {
+    flex: 3;
+    position: sticky;
+    top: 5rem;
+    overflow: scroll;
+    background-color: #f6f3f3;
+    height: calc(100vh - 5rem);
+    
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    
+
+}
+.darkbg{
+    background-color: #333;
+}
+.dark {
+    background-color: #222 !important;
+    color: white !important;
+}
+
+.rightBar .container .rightb-item{
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0rem 0rem 0.5rem 0.06rem rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0rem 0rem 0.5rem 0.06rem rgba(0, 0, 0, 0.09);
+    box-shadow: 0rem 0rem 0.5rem 0.06rem rgba(0, 0, 0, 0.09);
+    margin-bottom: 1rem;
+}
+.rightb-item span{
+    color: gray;
+    font-size: 0.8rem;
+}
+.rightb-item .user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.2rem 0;
+}
+.user .userInfo{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    position: relative;
+}
+
+.user .userInfo img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.user .userInfo .online{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: limegreen;
+    position: absolute;
+    top: 0;
+    left: 2rem;
+
+}
+
+.user .userInfo span{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.user .userInfo  p {
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.user .buttons{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.user .buttons button{
+    font-family: Poppins;
+    border: none;
+    background-color: #93A6E5;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: whitesmoke;
+
+}
+
+@media (max-width:480px) {
+    .rightBar {
+        display: none;
+    }
+}
+
+@media (max-width:960px){
+    .user .userInfo span {
+        font-weight: 500;
+        font-size: 0.7rem;
+    }
+    
+    .user .userInfo p {
+        color: gray;
+        font-size: 0.5rem;
+    }
+}
+
+
+
